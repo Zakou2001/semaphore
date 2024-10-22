@@ -5,6 +5,6 @@
   tasks:
     - name: Ensure /tmp/sidik directory exists
       file:
-        path: /tmp/sidik
+        path: /tmp/sidik/test
         state: directory
         mode: '0755'  # Définit les permissions du dossier
