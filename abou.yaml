@@ -1,0 +1,10 @@
+---
+- name: Create directory /tmp/sidik
+  hosts: all
+  become: yes  # Utilise sudo pour exécuter la tâche avec des privilèges élevés
+  tasks:
+    - name: Ensure /tmp/sidik directory exists
+      file:
+        path: /tmp/sidik
+        state: directory
+        mode: '0755'  # Définit les permissions du dossier
